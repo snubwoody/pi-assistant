@@ -3,7 +3,6 @@ import speech_recognition as sr
 from gtts import gTTS
 from playsound import playsound
 import os
-from test import timer
 
 #uses google text to speech to write and play an audio file then deletes it
 

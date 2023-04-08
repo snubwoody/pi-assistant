@@ -1,11 +1,18 @@
 import openai
 from audio import listen
 from audio import speak
+import json
+
+
+
+    
 
 
 def gpt(chat_prompt:str):
-
-    openai.api_key = api_key
+    with open('private.json') as f:
+        obj = json.load(f)
+        apikey = obj['apikey']
+    openai.api_key = apikey
     response = openai.Completion.create(model="text-davinci-003", prompt=chat_prompt, temperature=0.2, max_tokens=50)
     return response.choices[0].text
 

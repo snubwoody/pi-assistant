@@ -1,3 +1,7 @@
-with open('.txt') as f:
-    k = f.read()
-    print(k)
+import json
+
+with open('private.json') as f:
+    obj = json.load(f)
+    print(obj['apikey'])
+
+    
