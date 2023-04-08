@@ -1,0 +1,7 @@
+{
+    "1":"espeak",
+    "2":"ffmpeg",
+    "3":"pyaudio",
+    "4":"mysql",
+    "5":"mysqlconnector"
+}
